@@ -1,11 +1,11 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='django-api-test',
     version='0.1.0',
     author='David Greisen (CFPB)',
     author_email='david.greisen@cfpb.gov',
-    packages=['api_test', 'api_test.tests'],
+    packages=find_packages(),
     url='http://pypi.python.org/pypi/django-api-test/',
     license='LICENSE',
     description='Test server to easily test an API with any test framework',
